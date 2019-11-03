@@ -6,6 +6,19 @@
   <title>QVADRO</title>
 </head>
 <body>
+<!--for messenger on site-->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '1185622408475661',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v5.0'
+    });
+  };
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+ 
  <nav class="nav-wrap">
   <ul>
   	<li><a href="#">QVADRO</a></li>
@@ -14,6 +27,12 @@
    	<li><a href="#">KONTAKT</a></li>  
  	</ul>
  </nav>
+ <div class="fb-messengermessageus" 
+      messenger_app_id="<1185622408475661>" 
+      page_id="<102180314567834>"
+    color="<white>"
+    size="<standard>">where is my messenger btn?
+ </div>
  <section class="home-wrap">
  	<div class="img-map-home-wrap">
  		<img src="imgs/logo_qvadro.jpg" alt="LOGO">
@@ -24,7 +43,10 @@
 	<div class="info-home-wrap">
  	 	<h2>QVADRO</h2>
   	<p>Sprzedaż i Serwis komputerów stacjonarnych, laptopów, telefonów komórkowych, sprzętu CB.</p>
-  	<p><strong>E-mail: biuro@qvadro.pl, telefon: 14 642 26 50</strong></p>	
+  	<p>E-mail:
+  		<strong>biuro@qvadro.pl</strong>
+  		telefon: <strong>14 642 26 50</strong>
+    </p>
  	</div>
  </section>
  
@@ -33,19 +55,12 @@
    <p>ogólne info o sprzedawanych produktach</p>
    <ul>
    	<h4>Znajdziesz u nas między innymi:</h4>
-   	<li>Komputery</li>
-   	<li>Oprogramowanie</li>
-   	<li>Sprzęt biurowy</li>
-   	<li>Notebooki</li>
-   	<li>Monitory</li>
-   	<li>Materiały esploatacyjne</li>
-   	<li>Telefony komórkowe</li>
-   	<li>Aparaty cyfrowe</li>
-   	<li>Konsole</li>
-   	<li>Gry</li>
-   	<li>Anteny CB</li>
-   	<li>Nawigacje</li>
-   	<li>GPS</li>
+   	<li>Komputery, Notebooki, Monitory</li>
+   	<li>Oprogramowanie, Materiały esploatacyjne</li>
+   	<li> Sprzęt biurowy</li>
+   	<li>Telefony komórkowe, Aparaty cyfrowe</li>
+   	<li>Konsole, Gry</li>
+   	<li>Anteny CB, Nawigacje, GPS</li>
    </ul>
  </section>
  <section class="services-wrap">
@@ -69,6 +84,8 @@
   	
   </form>
  </section>
+
   
 </body>
+
 </html>

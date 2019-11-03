@@ -77,10 +77,12 @@ html, body {
 	padding: 1vh 16vw;
 	text-align: left;
 }
+.services-wrap ul h4 {
+  padding: 2vh 2vw;
+	text-align: left;
+}
 
 .services-wrap li {
-	padding: 1vh 16vw;
-	text-align: left;
 }
 
 
