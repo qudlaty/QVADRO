@@ -2,13 +2,14 @@
 <html lang="pl">
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap" rel="stylesheet">
-		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">
+		<meta charset="UTF-8" name="viewport" content="width=device-width,
+		 initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">
 		<link rel="stylesheet" href="main.css">
 		<title>QVADRO</title>
 	</head>
 	
 	<body>
-	<!--for messenger-->
+	<!--for messenger- uncomment laterr-->
 	<script async src="main.js"></script>
 
 		<nav class="nav-wrap">
@@ -22,21 +23,22 @@
 		<section class="home-wrap">
 			<div class="img-map-home-wrap">
 				<img src="imgs/logo_qvadro.jpg" alt="LOGO">
-				<map name="primary">
-					<img usemap="#primary" src="https://placehold.it/235x235" alt="235 x 235 pic">
-				</map>
 			</div>
 			<div class="info-home-wrap">
-				<h2 class="section-header">QVADRO</h2>
-				<p>Firma z 20-letnim stażem na rynku, zajmująca się sprzedażą i serwisem komputerów stacjonarnych, laptopów, telefonów komórkowych, sprzętu CB.</p>
-				<p><span class="contact-line">e-mail: <strong>biuro@qvadro.pl </strong></span>
-				<span class="contact-line">telefon: <strong>14 642 26 50 </strong></span></p>
+				<!--<h2 class="section-headers">QVADRO</h2>-->
+				<p>Firma z 20-letnim stażem, zajmująca się sprzedażą i serwisem
+				 komputerów PC, laptopów, telefonów komórkowych, 
+				 sprzętu CB oraz innych.<br>Wiecej w 'O NAS'
+				</p>
+				<p>
+					<span class="contact-line">e-mail: <strong>biuro@qvadro.pl </strong></span>
+					<span class="contact-line">telefon: <strong id="about-us">14 642 26 50 </strong></span></p>
 			</div>
 		</section>
 
-		<section class="about-us">
-			<div id="about-us" class="sell-wrap">
-				<h2 class="section-header">Sprzedaż</h2>
+		<section  class="about-us">
+			<div class="sell-wrap">
+				<h2 class="section-headers">OFERTA</h2>
 				<ul>
 					<h4>W<span class="name-span"> QVADRO </span> znajdziesz między innymi:</h4>
 					<li>Komputery, Notebooki, Monitory</li>
@@ -59,8 +61,12 @@
 		</section>	
 
 		<section id="contact" class="contact-wrap">
-			<h2 class="section-header">Kontakt</h2>
-			<form class="form-style">
+			<h2 class="section-headers">Kontakt</h2>
+			<map name="primary">
+				<img usemap="#primary" src="https://placehold.it/300x250" 
+				alt="mapa">
+			</map>
+			<form class="form-style" action="mailto:biuro@qvadro.pl">
 				<ul>
 					<li>
 						<input type="text" name="field1" class="field-style field-split align-left" placeholder="Imię" />
