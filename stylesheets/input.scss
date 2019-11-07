@@ -22,7 +22,7 @@ section {
 	border-bottom: solid black 1vh;
 }
 
-@media screen and (max-device-width: 767px){
+@media (max-device-width: 768px){
 	
 	.nav-wrap {
 		width: 100%;
@@ -51,23 +51,19 @@ section {
 			color: #e3361b;
 			font-weight: 600;
 			letter-spacing: 1px;
-			/*hover not for mobile*/
+			/*hover not for mobile
 			&:hover {
 			color: #e3721b;
-			}
+			}*/
 		}
 	}
 
-	
 	.section-headers {
 		color: #e3361b;
 		background-color: #583c99;
 		border-radius: 10px;
 		text-shadow: 1px 1px 1px black;
-		h2 {
-		}
 	}
-
 
 	.home-wrap {
 		padding-top: 76px;
@@ -77,13 +73,6 @@ section {
 	}
 
 	.img-home-wrap {
-		/*was for map inline*/
-		width: 100%;
-		justify-content: space-around;
-		align-items: center;
-		display: inline-flex;
-		padding: 4vh 4vw;
-
 		img {
 			border: 2px solid rgba(212, 216, 240, 0.3);
 		}
@@ -150,12 +139,10 @@ section {
 		padding-bottom: 1.5vh;
 		background-image: url(../imgs/tyler-lastovich-rAtzDB6hWrU-unsplash.jpg);
 		background-size: cover;
-
 		h2 {
 			font-size: 2.25rem;
-			margin-bottom: 2vh;
+			margin-bottom: 1vh;
 		}
-
 		iframe {
 			padding: 1vw;
 			width: 90vw;
@@ -237,7 +224,6 @@ section {
 			padding: 8px 18px;
 			text-decoration: none;
 			font: 1rem Arial, Helvetica, sans-serif;
-
 		}
 	}
 }
@@ -246,13 +232,13 @@ section {
 /*======= TABLETS =====*/
 
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px){
 	
 	.nav-wrap {
 		width: 100%;
 		background-color: #583c99;
 		position: fixed;
-
+		
 		ul {
 			width: 100%;
 			display: inline-flex;
@@ -277,9 +263,9 @@ section {
 			color: #e3361b;
 			font-weight: 600;
 			letter-spacing: 3px;
-			&:hover {
+/*			&:hover {
 			color: #e3721b;
-			}
+			}*/
 		}
 	}
 
@@ -301,34 +287,28 @@ section {
 		background-size: cover;
 	}
 
-	/* was for map inline
-	.img-home-wrap {	
-		width: 100%;
-		justify-content: space-around;
-		align-items: center;
-		display: inline-flex;
-		padding: 3vh 3vw;
-	*/
+	.img-home-wrap {		
 		img {
 			border: 2px solid rgba(212, 216, 240, 0.3);
 		}
-	/*}*/
-
-	.info-home-wrap p {
-		color: whitesmoke;
-		font-weight: 400;
-		text-align: left;
-		padding: 1vh;
-		margin: 1vw 6vw;
-		border: 2px solid rgba(212, 216, 240, 0.3);
-		border-radius: 5px;
-		background-color: rgba(0, 0, 0, 0.65);
-
-		.contact-line {
-			white-space: pre;
-		}
 	}
 
+	.info-home-wrap {
+		p {
+			color: whitesmoke;
+			font-weight: 400;
+			text-align: left;
+			padding: 1vh;
+			margin: 1vw 6vw;
+			border: 2px solid rgba(212, 216, 240, 0.3);
+			border-radius: 5px;
+			background-color: rgba(0, 0, 0, 0.65);
+			.contact-line {
+				white-space: pre;
+			}
+		}
+	}
+	
 	.about-us {
 		background-color: rgb(233, 236, 240);
 		ul {
@@ -523,6 +503,8 @@ section {
 	}
 
 	.home-wrap {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		padding-top: 76px;
 		font-size: 1.4rem;
 		background-image: url(../imgs/elly-brian-s_C8yBxJyvM-unsplash.jpg);
@@ -530,28 +512,29 @@ section {
 	}
 
 	.img-home-wrap {
-		/*was for map inline*/
-		width: 100%;
-		justify-content: space-around;
-		align-items: center;
-		display: inline-flex;
-		padding: 3vh 3vw;
-
+		padding: 3vh 1vw;
+		align-self: center;
 		img {
 			border: 2px solid rgba(212, 216, 240, 0.3);
 		}
 	}
 
-	.info-home-wrap p {
-		color: whitesmoke;
-		font-weight: 400;
-		text-align: left;
-		padding: 1vh;
-		margin: 1vw 6vw;
-		border: 2px solid rgba(212, 216, 240, 0.3);
-		border-radius: 5px;
-		background-color: rgba(0, 0, 0, 0.65);
-
+	.info-home-wrap {
+		align-self: center;
+		padding: 3vh 1vw;
+		p {
+			color: whitesmoke;
+			font-weight: 400;
+			text-align: center;
+			padding: 2vh 1vw;
+			margin: 1vh 6vw 1vh 1vw;
+			border: 2px solid rgba(212, 216, 240, 0.3);
+			border-radius: 5px;
+			background-color: rgba(0, 0, 0, 0.65);
+		}
+/*		.info-home-p2 {
+			padding: 1vh 1vw;
+		}*/
 		.contact-line {
 			white-space: pre;
 		}
@@ -559,6 +542,7 @@ section {
 
 	.about-us {
 		background-color: rgb(233, 236, 240);
+		padding-bottom: 2vh; ///
 		ul {
 			list-style: none;
 		}
