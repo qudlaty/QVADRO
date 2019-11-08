@@ -22,7 +22,11 @@ section {
   border-bottom: solid black 1vh;
 }
 
-@media (max-device-width: 768px) {
+ul {
+  list-style: none;
+}
+
+@media (max-device-width: 767px) {
   .nav-wrap {
     width: 100%;
     background-color: #583c99;
@@ -142,6 +146,22 @@ section {
     height: 40vh;
   }
 
+  .info-contact {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .info-contact p {
+    min-height: 9vh;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1vh;
+    margin: 1vw 2vw;
+    border: 2px solid rgba(212, 216, 240, 0.3);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+
   .form-style {
     max-width: 86vw;
     background: rgba(0, 0, 0, 0.25);
@@ -210,7 +230,7 @@ section {
   }
 }
 /*======= TABLETS =====*/
-@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .nav-wrap {
     width: 100%;
     background-color: #583c99;
@@ -335,6 +355,22 @@ section {
     padding: 1vw;
     width: 90vw;
     height: 40vh;
+  }
+
+  .info-contact {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .info-contact p {
+    min-height: 9vh;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1vh;
+    margin: 1vw 2vw;
+    border: 2px solid rgba(212, 216, 240, 0.3);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.45);
   }
 
   .form-style {
@@ -552,6 +588,22 @@ section {
     padding: 1vw;
     width: 38vw;
     height: 40vh;
+  }
+
+  .info-contact {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .info-contact p {
+    min-height: 9vh;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1vh;
+    margin: 1vw 2vw;
+    border: 2px solid rgba(212, 216, 240, 0.3);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.45);
   }
 
   .form-style {

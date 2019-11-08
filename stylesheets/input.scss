@@ -21,8 +21,11 @@ html {
 section {
 	border-bottom: solid black 1vh;
 }
+ul {
+	list-style: none;
+}
 
-@media (max-device-width: 768px){
+@media (max-device-width: 767px){
 	
 	.nav-wrap {
 		width: 100%;
@@ -149,6 +152,22 @@ section {
 			height: 40vh;
 		}
 	}
+	 
+	.info-contact {
+		display: grid;
+		grid-template-rows:  1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+		p {
+			min-height: 9vh;
+			color: whitesmoke;
+			text-align: center;
+			padding: 1vh;
+			margin: 1vw 2vw;
+			border: 2px solid rgba(212, 216, 240, 0.3);
+			border-radius: 5px;
+			background-color: rgba(0, 0, 0, 0.45);
+		}
+	}
 
 	.form-style {
 		max-width: 86vw;
@@ -232,7 +251,7 @@ section {
 /*======= TABLETS =====*/
 
 
-@media screen and (min-device-width: 769px) and (max-device-width: 1024px){
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
 	
 	.nav-wrap {
 		width: 100%;
@@ -286,13 +305,13 @@ section {
 		background-image: url(../imgs/elly-brian-s_C8yBxJyvM-unsplash.jpg);
 		background-size: cover;
 	}
-
+	
 	.img-home-wrap {		
 		img {
 			border: 2px solid rgba(212, 216, 240, 0.3);
 		}
 	}
-
+	
 	.info-home-wrap {
 		p {
 			color: whitesmoke;
@@ -315,7 +334,7 @@ section {
 			list-style: none;
 		}
 	}
-
+	
 	.name-span {
 		padding: 0 8px;
 		color: #e3721b;
@@ -323,11 +342,9 @@ section {
 		text-shadow: 1px 1px 1px black;
 	}
 
-
 	.sell-wrap, .services-wrap {
 		padding-top: 4vh ;
 		font-size: 1.5rem;
-
 		ul {
 			padding: 1vh 10vw;
 			text-align: left;
@@ -366,6 +383,21 @@ section {
 			padding: 1vw;
 			width: 90vw;
 			height: 40vh;
+		}
+	}
+	.info-contact {
+		display: grid;
+		grid-template-rows:  1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+		p {
+			min-height: 9vh;
+			color: whitesmoke;
+			text-align: center;
+			padding: 1vh;
+			margin: 1vw 2vw;
+			border: 2px solid rgba(212, 216, 240, 0.3);
+			border-radius: 5px;
+			background-color: rgba(0, 0, 0, 0.45);
 		}
 	}
 
@@ -602,6 +634,22 @@ section {
 				width: 38vw;
 				height: 40vh;
 			}
+		}
+	}
+	
+	.info-contact {
+		display: grid;
+		grid-template-rows:  1fr ;
+		grid-template-columns: 1fr 1fr 1fr;
+		p {
+			min-height: 9vh;
+			color: whitesmoke;
+			text-align: center;
+			padding: 1vh;
+			margin: 1vw 2vw;
+			border: 2px solid rgba(212, 216, 240, 0.3);
+			border-radius: 5px;
+			background-color: rgba(0, 0, 0, 0.45);
 		}
 	}
 
