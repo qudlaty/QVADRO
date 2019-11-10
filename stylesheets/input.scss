@@ -4,13 +4,7 @@
   box-sizing: border-box;
 }
 
-html {
-	width: 100%;
-  height: 100%;
-	scroll-behavior: smooth;
-}
-
- body {
+html, body {
 	width: 100%;
   height: 100%;
 	text-align: center;
@@ -21,6 +15,7 @@ html {
 section {
 	border-bottom: solid black 1vh;
 }
+
 ul {
 	list-style: none;
 }
@@ -36,7 +31,6 @@ ul {
 			width: 100%;
 			display: inline-flex;
 			align-items: center;
-			list-style: none;
 			justify-content: space-between;
 			font-size: 1.4rem;
 			line-height: 3;
@@ -54,10 +48,6 @@ ul {
 			color: #e3361b;
 			font-weight: 600;
 			letter-spacing: 1px;
-			/*hover not for mobile
-			&:hover {
-			color: #e3721b;
-			}*/
 		}
 	}
 
@@ -99,9 +89,6 @@ ul {
 
 	.about-us {
 		background-color: rgb(233, 236, 240);
-		ul {
-			list-style: none;
-		}
 	}
 
 	.name-span {
@@ -179,8 +166,6 @@ ul {
 		ul {
 			padding:0;
 			margin:0;
-			list-style:none;
-
 			li {
 				display: block;
 				margin-bottom: 10px;
@@ -262,7 +247,6 @@ ul {
 			width: 100%;
 			display: inline-flex;
 			align-items: center;
-			list-style: none;
 			justify-content: space-around;
 			font-size: 1.4rem;
 			line-height: 3;
@@ -282,9 +266,6 @@ ul {
 			color: #e3361b;
 			font-weight: 600;
 			letter-spacing: 3px;
-/*			&:hover {
-			color: #e3721b;
-			}*/
 		}
 	}
 
