@@ -11,455 +11,362 @@ html, body {
 	font-family: 'Raleway', sans-serif;
 	scroll-behavior: smooth;
 }
-
 section {
 	border-bottom: solid black 1vh;
 }
 
 ul {
+	padding:0;
+	margin:0;
 	list-style: none;
 }
+
+.nav-wrap {
+	width: 100%;
+	background-color: #583c99;
+	position: fixed;
+	ul {
+		width: 100%;
+		display: inline-flex;
+		align-items: center;
+		line-height: 3;
+		li {
+			width: 100%;
+			border: 1px solid rgb(233, 236, 240);
+			border-top: none;
+			padding: 0 2px;
+		}
+	}
+	a {
+		text-shadow: 1px 1px 1px black;
+		text-decoration: none;
+		color: #e3361b;
+		font-weight: 600;
+	}
+}
+
+.section-headers {
+	max-width: 99vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5vh;
+	color: #e3361b;
+	background-color: #583c99;
+	border-radius: 10px;
+}
+
+.home-wrap {
+	padding-top: 76px;
+	font-size: 1.4rem;
+	background-image: url(../imgs/elly-brian-s_C8yBxJyvM-unsplash.jpg);
+}
+
+.img-home-wrap {
+	img {
+		border: 2px solid rgba(212, 216, 240, 0.3);
+	}
+}
+
+.info-home-wrap {
+	p {
+		color: whitesmoke;
+		font-weight: 400;
+		border: 2px solid rgba(212, 216, 240, 0.3);
+		border-radius: 5px;
+		background-color: rgba(0, 0, 0, 0.65);
+		.contact-line {
+			white-space: pre;
+		}
+	}
+}
+
+.about-us {
+	background-color: rgb(233, 236, 240);
+}
+
+.name-span {
+	color: #e3721b;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 1px black;
+}
+
+.sell-wrap, .services-wrap {
+	padding-top: 4vh ;
+	font-size: 1.5rem;
+	ul {
+		text-align: left;
+	}
+	h4 {
+		padding: 2vh 2vw;
+		text-align: left;
+		color: #000;
+		background-color: rgba(212, 216, 240, 0.9);
+		border-radius: 8px;
+	}
+	li {
+		margin: 2px 0;
+		padding: 1vh;
+		background-color: rgba(138, 86, 227, 0.9); 
+		border-radius: 8px;
+		text-align: center;
+		i {
+			float: left;
+		}
+	} 
+}
+
+.contact-wrap {
+	padding: 4vh 0 0 0;
+	padding-bottom: 1.5vh;
+	background-image: url(../imgs/tyler-lastovich-rAtzDB6hWrU-unsplash.jpg);
+	background-size: cover;
+	h2 {
+		font-size: 2.25rem;
+	}
+	iframe {
+		margin: 1vh auto;
+		padding: 1vw;
+		height: 42vh;
+		background: rgba(0, 0, 0, 0.25);
+		box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	}
+}
+
+.info-contact {
+	display: grid;
+
+	p {
+		min-height: 9vh;
+		color: whitesmoke;
+		text-align: center;
+		padding: 2vh;
+		margin: 1vh 2vw;
+		border: 2px solid rgba(212, 216, 240, 0.3);
+		border-radius: 5px;
+		background-color: rgba(0, 0, 0, 0.45);
+	}
+}
+
+.form-style {
+	background: rgba(0, 0, 0, 0.25);
+	padding: 3vh 3vw;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	ul {
+		li {
+			display: block;
+			margin-bottom: 10px;
+			min-height: 35px;
+			.field-style {
+				box-sizing: border-box; 
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box; 
+				padding: 8px;
+				outline: none;
+				border: 1px solid #B0CFE0;
+				background: rgba(0, 0, 0, 0.25);
+				-webkit-transition: all 0.30s ease-in-out;
+				-moz-transition: all 0.30s ease-in-out;
+				-ms-transition: all 0.30s ease-in-out;
+				-o-transition: all 0.30s ease-in-out;
+				color: aliceblue;
+				&:focus{
+					box-shadow: 0 0 5px #B0CFE0;
+					border:1px solid #B0CFE0;
+				}
+			}
+		}
+	}
+}
+
+.form-style ul li {
+	.field-split {
+		width: 49%;
+	}
+	.field-full {
+		width: 100%;
+	}
+	input.align-left {
+		float: left;
+	}
+	input.align-right {
+		float: right;
+	}
+	textarea {
+		width: 100%;
+
+	}
+}
+
+.form-style ul li	input {
+	&[type="button"],
+	&[type="submit"] {
+		-moz-box-shadow: inset 0px 1px 0px 0px #724ca8;
+		-webkit-box-shadow: inset 0px 1px 0px 0px #724ca8;
+		box-shadow: inset 0px 1px 0px 0px #724ca8;
+		background-color: #5f3a94;
+		border: 1px solid #5f3a94;
+		display: inline-block;
+		cursor: pointer;
+		color: #FFFFFF;
+		padding: 8px 18px;
+		text-decoration: none;
+		font: 1rem Arial, Helvetica, sans-serif;
+	}
+}
+
+/*-==== small mobile ====*/
 
 @media (max-device-width: 767px){
 	
 	.nav-wrap {
-		width: 100%;
-		background-color: #583c99;
-		position: fixed;
-
 		ul {
-			width: 100%;
-			display: inline-flex;
-			align-items: center;
-			justify-content: space-between;
 			font-size: 1.4rem;
-			line-height: 3;
+			justify-content: space-between;
 			li {
-				width: 100%;
-				border: 1px solid rgb(233, 236, 240);
-				border-top: none;
 				border-radius: 3px;
-				padding: 0 2px;
 			}
 		}
 		a {
-			text-shadow: 1px 1px 1px black;
-			text-decoration: none;
-			color: #e3361b;
-			font-weight: 600;
 			letter-spacing: 1px;
 		}
 	}
 
 	.section-headers {
-		color: #e3361b;
-		background-color: #583c99;
-		border-radius: 10px;
 		text-shadow: 1px 1px 1px black;
 	}
 
 	.home-wrap {
-		padding-top: 76px;
-		font-size: 1.5rem;
-		background-image: url(../imgs/elly-brian-s_C8yBxJyvM-unsplash.jpg);
 		background-size: contain;
 	}
 
-	.img-home-wrap {
-		img {
-			border: 2px solid rgba(212, 216, 240, 0.3);
-		}
-	}
-
-	.info-home-wrap p {
-		color: whitesmoke;
-		font-weight: 400;
-		text-align: left;
-		padding: 1vh;
-		margin: 1vw 6vw;
-		border: 2px solid rgba(212, 216, 240, 0.3);
-		border-radius: 5px;
-		background-color: rgba(0, 0, 0, 0.65);
-
-		.contact-line {
-			white-space: pre;
-		}
-	}
-
-
-	.about-us {
-		background-color: rgb(233, 236, 240);
-	}
-
-	.name-span {
-		padding: 0 5px;
-		color: #e3721b;
-		letter-spacing: 2px;
-		text-shadow: 1px 1px 1px black;
-	}
-
-
-	.sell-wrap, .services-wrap {
-		padding-top: 4vh ;
-		font-size: 1.5rem;
-
-		ul {
-			padding: 1vh 6vw;
+	.info-home-wrap {
+		p {
 			text-align: left;
+			margin: 1vw 6vw;
+			padding: 1vh;
+		}
+	}
+	
+	.name-span {
+		padding: 0 4px;;
+	}
+	
+	.sell-wrap, .services-wrap {
+		ul {
+			padding: 1vh 6vw
 		}
 		h4 {
-			padding: 2vh 2vw;
-			text-align: left;
-			color: #000;
 		}
 		li {
-			margin: 2px 0;
-			padding: 1vh;
-			background-color: rgba(138, 86, 227, 0.9); 
-			border-radius: 8px;
-			text-align: center;
-			i {
-				float: left;
-			}
 		} 
 	}
 
 	.contact-wrap {
-		padding: 6vh 0 0 0;
-		padding-bottom: 1.5vh;
-		background-image: url(../imgs/tyler-lastovich-rAtzDB6hWrU-unsplash.jpg);
-		background-size: cover;
 		h2 {
-			font-size: 2.25rem;
-			margin-bottom: 1vh;
+			margin-bottom: 5vh;
 		}
-		iframe {
-			padding: 1vw;
-			width: 90vw;
-			height: 40vh;
+			iframe {
+			width: 88vw;
 		}
 	}
 	 
 	.info-contact {
-		display: grid;
 		grid-template-rows:  1fr 1fr 1fr;
 		grid-template-columns: 1fr;
 		p {
-			min-height: 9vh;
-			color: whitesmoke;
-			text-align: center;
-			padding: 1vh;
-			margin: 1vw 2vw;
-			border: 2px solid rgba(212, 216, 240, 0.3);
-			border-radius: 5px;
-			background-color: rgba(0, 0, 0, 0.45);
 		}
 	}
-
+	
 	.form-style {
 		max-width: 86vw;
-		background: rgba(0, 0, 0, 0.25);
-		padding: 3vh 3vw;
-		margin: 2vh auto;
-		box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
-
-		ul {
-			padding:0;
-			margin:0;
-			li {
-				display: block;
-				margin-bottom: 10px;
-				min-height: 35px;
-
-				.field-style {
-					box-sizing: border-box; 
-					-webkit-box-sizing: border-box;
-					-moz-box-sizing: border-box; 
-					padding: 8px;
-					outline: none;
-					border: 1px solid #B0CFE0;
-					background: rgba(0, 0, 0, 0.25);
-					-webkit-transition: all 0.30s ease-in-out;
-					-moz-transition: all 0.30s ease-in-out;
-					-ms-transition: all 0.30s ease-in-out;
-					-o-transition: all 0.30s ease-in-out;
-					color: aliceblue;
-
-					&:focus{
-						box-shadow: 0 0 5px #B0CFE0;
-						border:1px solid #B0CFE0;
-					}
-				}
-			}
-		}
+		margin: 0 auto;
 	}
-
+	
 	.form-style ul li {
-
-		.field-split {
-			width: 49%;
-		}
-		.field-full {
-			width: 100%;
-		}
-		input.align-left {
-			float: left;
-		}
-		input.align-right {
-			float: right;
-		}
 		textarea {
-			width: 100%;
 			height: 20vh;
-		}
-	}
-
-	.form-style ul li	input {
-		&[type="button"],
-		&[type="submit"] {
-			-moz-box-shadow: inset 0px 1px 0px 0px #724ca8;
-			-webkit-box-shadow: inset 0px 1px 0px 0px #724ca8;
-			box-shadow: inset 0px 1px 0px 0px #724ca8;
-			background-color: #5f3a94;
-			border: 1px solid #5f3a94;
-			display: inline-block;
-			cursor: pointer;
-			color: #FFFFFF;
-			padding: 8px 18px;
-			text-decoration: none;
-			font: 1rem Arial, Helvetica, sans-serif;
 		}
 	}
 }
 
-
 /*======= TABLETS =====*/
-
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
 	
-	.nav-wrap {
-		width: 100%;
-		background-color: #583c99;
-		position: fixed;
-		
+	.nav-wrap {	
 		ul {
-			width: 100%;
-			display: inline-flex;
-			align-items: center;
-			justify-content: space-around;
 			font-size: 1.4rem;
-			line-height: 3;
+			justify-content: space-around;
 			li {
-				margin: 0 4vw; 
-				width: 100%;
-				border: 1px solid rgb(233, 236, 240);
-				border-top: none;
-				border-radius: 5px;
-				padding: 0 2px;
+				margin: 0 4vw;
 			}
 		}
 		a {
 			margin: 0 2vw;
-			text-shadow: 1px 1px 1px black;
-			text-decoration: none;
-			color: #e3361b;
-			font-weight: 600;
 			letter-spacing: 3px;
 		}
 	}
 
 	.section-headers {
 		line-height: 1.3;
-		margin: 0 auto;
-		max-width: 99vw;
-		color: #e3361b;
-		background-color: #583c99;
-		border-radius: 10px;
-		text-shadow: 2px 1px 1px black;
+		text-shadow: 2px 1px 2px black;
 	}
 
 	.home-wrap {
-		padding-top: 76px;
-		font-size: 1.4rem;
-		/*bg img to fix*/
-		background-image: url(../imgs/elly-brian-s_C8yBxJyvM-unsplash.jpg);
 		background-size: cover;
-	}
-	
-	.img-home-wrap {		
-		img {
-			border: 2px solid rgba(212, 216, 240, 0.3);
-		}
 	}
 	
 	.info-home-wrap {
 		p {
-			color: whitesmoke;
-			font-weight: 400;
 			text-align: left;
 			padding: 1vh;
-			margin: 1vw 6vw;
-			border: 2px solid rgba(212, 216, 240, 0.3);
-			border-radius: 5px;
-			background-color: rgba(0, 0, 0, 0.65);
-			.contact-line {
-				white-space: pre;
-			}
-		}
-	}
-	
-	.about-us {
-		background-color: rgb(233, 236, 240);
-		ul {
-			list-style: none;
+			margin: 1vw 8vw;
 		}
 	}
 	
 	.name-span {
-		padding: 0 8px;
-		color: #e3721b;
-		letter-spacing: 2px;
-		text-shadow: 1px 1px 1px black;
+		padding: 0 4px;;
 	}
-
+	
 	.sell-wrap, .services-wrap {
-		padding-top: 4vh ;
-		font-size: 1.5rem;
 		ul {
 			padding: 1vh 10vw;
-			text-align: left;
 		}
 		h4 {
-			padding: 2vh 2vw;
-			text-align: left;
-			color: #000;
-			background-color: rgba(212, 216, 240, 0.9);
-			border-radius: 8px;
 		}
 		li {
-			margin: 2px 0;
-			padding: 1vh;
-			background-color: rgba(138, 86, 227, 0.9); 
-			border-radius: 8px;
-			text-align: center;
-			i {
-				float: left;
-			}
 		} 
 	}
 
 	.contact-wrap {
-		padding: 6vh 0 0 0;
-		padding-bottom: 1.5vh;
-		background-image: url(../imgs/tyler-lastovich-rAtzDB6hWrU-unsplash.jpg);
-		background-size: cover;
-
 		h2 {
-			font-size: 2.25rem;
 			margin-bottom: 2vh;
 		}
-
 		iframe {
-			padding: 1vw;
-			width: 90vw;
-			height: 40vh;
+			width: 88vw;
 		}
 	}
+	
 	.info-contact {
-		display: grid;
 		grid-template-rows:  1fr 1fr 1fr;
 		grid-template-columns: 1fr;
 		p {
-			min-height: 9vh;
-			color: whitesmoke;
-			text-align: center;
-			padding: 1vh;
-			margin: 1vw 2vw;
-			border: 2px solid rgba(212, 216, 240, 0.3);
-			border-radius: 5px;
-			background-color: rgba(0, 0, 0, 0.45);
 		}
 	}
 
 	.form-style {
-		max-width: 86vw;
-		background: rgba(0, 0, 0, 0.25);
-		padding: 3vh 3vw;
+		min-width: 38vw;
 		margin: 2vh auto;
-		box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
-
-		ul {
-			padding:0;
-			margin:0;
-			list-style:none;
-
-			li {
-				display: block;
-				margin-bottom: 10px;
-				min-height: 35px;
-
-				.field-style {
-					box-sizing: border-box; 
-					-webkit-box-sizing: border-box;
-					-moz-box-sizing: border-box; 
-					padding: 8px;
-					outline: none;
-					border: 1px solid #B0CFE0;
-					background: rgba(0, 0, 0, 0.25);
-					-webkit-transition: all 0.30s ease-in-out;
-					-moz-transition: all 0.30s ease-in-out;
-					-ms-transition: all 0.30s ease-in-out;
-					-o-transition: all 0.30s ease-in-out;
-					color: aliceblue;
-
-					&:focus{
-						box-shadow: 0 0 5px #B0CFE0;
-						border:1px solid #B0CFE0;
-					}
-				}
-			}
-		}
+		max-width: 86vw;
 	}
 
 	.form-style ul li {
-
-		.field-split {
-			width: 49%;
-		}
-		.field-full {
-			width: 100%;
-		}
-		input.align-left {
-			float: left;
-		}
-		input.align-right {
-			float: right;
-		}
 		textarea {
-			width: 100%;
 			height: 12vh;
 		}
 	}
 
-	.form-style ul li	input {
-		&[type="button"],
-		&[type="submit"] {
-			-moz-box-shadow: inset 0px 1px 0px 0px #724ca8;
-			-webkit-box-shadow: inset 0px 1px 0px 0px #724ca8;
-			box-shadow: inset 0px 1px 0px 0px #724ca8;
-			background-color: #5f3a94;
-			border: 1px solid #5f3a94;
-			display: inline-block;
-			cursor: pointer;
-			color: #FFFFFF;
-			padding: 8px 18px;
-			text-decoration: none;
-			font: 1rem Arial, Helvetica, sans-serif;
-		}
-	}
 }
-
 
 /*======= FULL SCREEN =====*/
 
@@ -472,244 +379,100 @@ ul {
 	
 	.nav-wrap {
 		width: 80vw;
-		background-color: #583c99;
-		position: fixed;
-
 		ul {
-			width: 100%;
-			display: inline-flex;
-			align-items: center;
-			list-style: none;
 			justify-content: space-around;
-			font-size: 1.4rem;
-			line-height: 3;
+			font-size: 1.6rem;
 			li {
 				margin: 0 4vw; 
-				width: 100%;
-				border: 1px solid rgb(233, 236, 240);
-				border-top: none;
 				border-radius: 5px;
-				padding: 0 2px;
 			}
 		}
 		a {
-			margin: 0 2vw;
-			text-shadow: 1px 1px 1px black;
-			text-decoration: none;
-			color: #e3361b;
-			font-weight: 600;
+			margin: 0 2vw;;
 			letter-spacing: 3px;
 			&:hover {
-			color: #e3721b;
+				text-shadow: 2px 2px 3px black;
+				color: #e3721b;
 			}
 		}
 	}
 
 	.section-headers {
 		line-height: 1.3;
-		margin: 0 auto;
-		max-width: 99vw;
-		color: #e3361b;
-		background-color: #583c99;
-		border-radius: 10px;
 		text-shadow: 2px 1px 1px black;
 	}
 
 	.home-wrap {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		padding-top: 76px;
-		font-size: 1.4rem;
-		background-image: url(../imgs/elly-brian-s_C8yBxJyvM-unsplash.jpg);
 		background-size: cover;
 	}
 
 	.img-home-wrap {
 		padding: 3vh 1vw;
 		align-self: center;
-		img {
-			border: 2px solid rgba(212, 216, 240, 0.3);
-		}
 	}
 
 	.info-home-wrap {
 		align-self: center;
 		padding: 3vh 1vw;
 		p {
-			color: whitesmoke;
-			font-weight: 400;
 			text-align: center;
 			padding: 2vh 1vw;
 			margin: 1vh 6vw 1vh 1vw;
-			border: 2px solid rgba(212, 216, 240, 0.3);
-			border-radius: 5px;
-			background-color: rgba(0, 0, 0, 0.65);
-		}
-/*		.info-home-p2 {
-			padding: 1vh 1vw;
-		}*/
-		.contact-line {
-			white-space: pre;
 		}
 	}
 
 	.about-us {
-		background-color: rgb(233, 236, 240);
-		padding-bottom: 2vh; ///
-		ul {
-			list-style: none;
-		}
+		padding-bottom: 2vh;
 	}
 
 	.name-span {
 		padding: 0 8px;
-		color: #e3721b;
-		letter-spacing: 2px;
-		text-shadow: 1px 1px 1px black;
 	}
 
-
 	.sell-wrap, .services-wrap {
-		padding-top: 4vh ;
-		font-size: 1.5rem;
-
 		ul {
 			padding: 1vh 10vw;
-			text-align: left;
 		}
-		h4 {
-			padding: 2vh 2vw;
-			text-align: left;
-			color: #000;
-			background-color: rgba(212, 216, 240, 0.9);
-			border-radius: 8px;
-		}
-		li {
-			margin: 2px 0;
-			padding: 1vh;
-			background-color: rgba(138, 86, 227, 0.9); 
-			border-radius: 8px;
-			text-align: center;
-			i {
-				float: left;
-			}
-		} 
 	}
 
 	.contact-wrap {
-		padding: 6vh 0 0 0;
-		padding-bottom: 1.5vh;
-		background-image: url(../imgs/tyler-lastovich-rAtzDB6hWrU-unsplash.jpg);
-		background-size: cover;
-		.section-header h2 {
-				font-size: 2.25rem;
-				margin-bottom: 5vh;
-			}
-		
 		.map-form-wrap {
 			display: inline-grid;
 			grid-template-columns: 1fr 1fr;
-
 			iframe {
-				padding: 1vw;
 				width: 38vw;
-				height: 40vh;
 			}
 		}
 	}
 	
 	.info-contact {
-		display: grid;
 		grid-template-rows:  1fr ;
 		grid-template-columns: 1fr 1fr 1fr;
 		p {
-			min-height: 9vh;
-			color: whitesmoke;
-			text-align: center;
-			padding: 1vh;
-			margin: 1vw 2vw;
-			border: 2px solid rgba(212, 216, 240, 0.3);
-			border-radius: 5px;
-			background-color: rgba(0, 0, 0, 0.45);
 		}
 	}
 
 	.form-style {
+		min-width: 38vw;
+		margin: 1vh auto;
 		max-width: 38vw;
-		background: rgba(0, 0, 0, 0.25);
-		padding: 3vh 3vw;
-		margin: 2vh auto;
-		box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
-		ul {
-			padding:0;
-			margin:0;
-			list-style:none;
-			li {
-				display: block;
-				margin-bottom: 10px;
-				min-height: 35px;
-				.field-style {
-					box-sizing: border-box; 
-					-webkit-box-sizing: border-box;
-					-moz-box-sizing: border-box; 
-					padding: 8px;
-					outline: none;
-					border: 1px solid #B0CFE0;
-					background: rgba(0, 0, 0, 0.25);
-					-webkit-transition: all 0.30s ease-in-out;
-					-moz-transition: all 0.30s ease-in-out;
-					-ms-transition: all 0.30s ease-in-out;
-					-o-transition: all 0.30s ease-in-out;
-					color: aliceblue;
-
-					&:focus{
-						box-shadow: 0 0 5px #B0CFE0;
-						border:1px solid #B0CFE0;
-					}
-				}
-			}
-		}
 	}
 
 	.form-style ul li {
-
-		.field-split {
-			width: 49%;
-		}
-		.field-full {
-			width: 100%;
-		}
-		input.align-left {
-			float: left;
-		}
-		input.align-right {
-			float: right;
-		}
 		textarea {
-			width: 100%;
-			height: 23vh;
+			height: 24vh;
 		}
 	}
 
 	.form-style ul li	input {
 		&[type="button"],
 		&[type="submit"] {
-			-moz-box-shadow: inset 0px 1px 0px 0px #724ca8;
-			-webkit-box-shadow: inset 0px 1px 0px 0px #724ca8;
-			box-shadow: inset 0px 1px 0px 0px #724ca8;
-			background-color: #5f3a94;
-			border: 1px solid #5f3a94;
-			display: inline-block;
-			cursor: pointer;
-			color: #FFFFFF;
-			padding: 8px 18px;
-			text-decoration: none;
-			font: 1rem Arial, Helvetica, sans-serif;
-
 			&:hover {
 				font-size: 1.2rem;
 				color: #eb450e;
-				background: linear-gradient(to bottom, #724ca8 5%, #724ca8 100%);
+				background: linear-gradient(to bottom, #724ca8 5%, #324fa8 100%);
 			}
 		}
 	}
