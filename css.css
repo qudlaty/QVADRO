@@ -1,15 +1,38 @@
+
+/* radial gradient border 
+.test-out {
+	margin: 3vw;
+	width: 250px;
+	height: 250px;
+	
+  border: double 3vh transparent;
+  border-radius: 50%;
+  background-image:  linear-gradient(transparent, white), radial-gradient(circle at top left, #f00,#3020ff);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+}
+.test {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.test img {
+	background-color: transparent;
+	width: 180px;
+	height: 180px;
+	border: 2vh solid transparent;
+	border-radius: 50%;
+}*/
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body {
 	background-color: darkcyan;
-}
-ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
 }
 
 .logo-wrap {
@@ -102,16 +125,24 @@ ul {
 .test {
 	align-self: center;
 	justify-self: center;
-	border-radius: 50%;
 	background-color: red;
 	border: 2vh solid green;
 	border-radius: 50%;
+	
+/*	transform: rotateZ(45deg);
+	border: double 2vh transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, green, transparent);*/
+	
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .test img {
+/*	transform: rotateZ(-45deg);*/
 	background-color: cornflowerblue ;
 	width: 150px;
 	height: 150px;
 	border: 2vh solid orange;
-	border-radius: 50%;
+	border-radius: 49%;
 }

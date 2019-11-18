@@ -13,32 +13,6 @@ html, body {
 }
 
 
-/* radial gradient border 
-.test-out {
-	margin: 3vw;
-	width: 250px;
-	height: 250px;
-	
-  border: double 3vh transparent;
-  border-radius: 50%;
-  background-image:  linear-gradient(transparent, white), radial-gradient(circle at top left, #f00,#3020ff);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-
-}
-.test {
-	width: 200px;
-	height: 200px rotate(0.05turn);
-	border-radius: 50%;
-}
-.test img {
-	background-color: transparent;
-	width: 180px;
-	height: 180px;
-	border: 2vh solid transparent;
-	border-radius: 50%;
-}*/
-
 section {
   border-bottom: solid black 1vh;
 }
