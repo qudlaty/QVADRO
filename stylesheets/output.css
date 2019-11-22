@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 78px;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -12,9 +16,8 @@ html, body {
   scroll-behavior: smooth;
 }
 
-
 section {
-  border-bottom: solid black 1vh;
+  border-bottom: Dotted gray 1px;
 }
 
 ul {
@@ -48,17 +51,16 @@ ul {
 }
 
 .section-headers {
-  max-width: 99vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5vh;
+  padding: 1vh;
+  margin: 4vh auto 2vh auto;
   color: #e3361b;
   background-color: #583c99;
   border-radius: 10px;
+  border: 1px solid #000;
 }
 
 .home-wrap {
-  padding-top: 76px;
+  padding-top: 100px;
   font-size: 1.4rem;
   background-image: url(../imgs/elly-brian-s_C8yBxJyvM-unsplash.jpg);
 }
@@ -89,7 +91,6 @@ ul {
 }
 
 .sell-wrap, .services-wrap {
-  padding-top: 4vh;
   font-size: 1.5rem;
 }
 .sell-wrap ul, .services-wrap ul {
@@ -103,7 +104,7 @@ ul {
   border-radius: 8px;
 }
 .sell-wrap li, .services-wrap li {
-  margin: 2px 0;
+  margin: 3px 0;
   padding: 1vh;
   background-color: rgba(138, 86, 227, 0.9);
   border-radius: 8px;
@@ -114,8 +115,6 @@ ul {
 }
 
 .contact-wrap {
-  padding: 4vh 0 0 0;
-  padding-bottom: 1.5vh;
   background-image: url(../imgs/tyler-lastovich-rAtzDB6hWrU-unsplash.jpg);
   background-size: cover;
 }
@@ -137,7 +136,7 @@ ul {
   min-height: 9vh;
   color: whitesmoke;
   text-align: center;
-  padding: 2vh;
+  padding: 2vh 2vw;
   margin: 1vh 2vw;
   border: 2px solid rgba(212, 216, 240, 0.3);
   border-radius: 5px;
