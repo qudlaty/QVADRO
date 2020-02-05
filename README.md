@@ -1,11 +1,19 @@
-
 QVADRO  firma handlowo-usługowa
+
+Przykładowy wygląd strony:
+
+https://qudlaty.github.io/QVADRO/
+
+
+
+
+
 
 I Główne założenia projektu.
 
   1. Stworzenie strony wizytówki firmy handlowo-usługowej "QVADRO".
 
-  2. Wersja na smartfony i tablety.
+  2. Wersja mobilna.
 
   3. Zaistnienie firmy w internecie:
   -założenie konta google( ogólna obsługa mailowa oraz dodanie
